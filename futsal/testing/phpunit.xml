@@ -1,0 +1,13 @@
+<?xml version="1.0"?> 
+<phpunit>
+	<testsuites>
+		<testsuite name="test">
+			<directory>test</directory>
+		</testsuite>
+	</testsuites>
+<filter>
+	<whitelist processUncoveredFilesFromWhitelist="true">
+		<file>include/functions.php</file>
+	</whitelist>
+</filter>
+</phpunit>

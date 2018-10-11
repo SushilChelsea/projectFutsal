@@ -1,0 +1,204 @@
+body {
+    width:98%;
+    margin: auto;
+}
+
+.header a:hover {
+	font-size: 18px;
+	font-family: Helvetica;
+    color: #4258AC;
+    text-decoration: none;
+}
+.header{
+	background: #dcd9d9;
+	height: 45px;
+}
+.header .form, .page{
+	margin-top: 4px;
+}
+.header .page{ margin-top: 8px; }
+
+#banner {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.5);
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    /* background-image: url("../img/banner.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0;
+    display: -ms-flexbox;
+    height: 29rem !important;
+    min-height: 29rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#banner video {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    /* background-color: #c5111186; */
+    /* background-color: #4258AC */
+    opacity: 0.45;
+}
+
+#banner:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+    background: #111111;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#banner:after {
+    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#search {
+    width: 100%; height: 10rem; background: #dcd9d9; border-top: 1px solid black;
+}
+
+article {
+    text-align: center;
+    color: #dcd9d9;
+      
+}
+article h2 {
+    border: 2px solid #dcd9d9;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+article p {
+    padding: 5px 5px 0px 5px;
+    line-height: 2.3rem;
+    color: gray;
+}
+article li {
+    line-height: 2.3rem;
+    color: gray;
+}
+
+#parallex {
+    width:98%;
+    margin: auto;
+}
+.parallex-effect {
+    /* The image used */
+    background-image: url("../img/whyplay.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 995px) {
+    .modal-dialog {
+        max-width: 500px;
+        width: auto;
+    }
+    #banner {
+    	margin-top: 80px;
+    }
+    .search-form {
+        display: flex;
+        justify-content: space-around;
+    }
+    #search button {
+        height: 35px;
+    } 
+    .parallex-effect {
+        background-attachment: inherit;
+        background-size: 100%;
+        margin-top: -50px;
+    }
+    .btn-responsive {
+        padding:4px 9px;
+        font-size:90%;
+        line-height: 1.2;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+    #search .description {
+        display: none;
+    }
+    #banner {
+    	margin-top: 180px;
+    }
+    .search-form {
+        display: flex;
+        justify-content: space-around;
+    }
+    #search button {
+        height: 35px;
+    } 
+    .parallex-effect {
+        background-attachment: inherit;
+        background-size: 100%;
+        margin-top: -50px;
+    }
+    .btn-responsive {
+        padding:2px 4px;
+        font-size:80%;
+        line-height: 1;
+        border-radius:3px;
+    }
+}
+
+@media (hover: none) {
+    a:hover { color: inherit; }
+}
